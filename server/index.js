@@ -1,8 +1,9 @@
 const express = require ('express')
 const getProducts = require('./getProducts')
 const getProduct = require('./getProduct')
-
 const app = express()
+app.use(express.json());
+
 
 const port = 5040
 
